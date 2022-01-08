@@ -8,9 +8,9 @@ config = ConfigParser()
 config.read('setting_messages.ini')
 
 # Telegram
-configtg = config['telgram']
+configtg = config['telegram']
 token = configtg.get('token')
-id = configtg.get('chatif')
+chatid = configtg.get('chatid')
 
 # Email
 configemail = config['email']
