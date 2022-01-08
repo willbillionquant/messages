@@ -5,7 +5,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 import requests
 
-from messages.loadsettings_messages import *
+from messages import *
 
 # Send email functions
 def sendmail_attach(sender, receiver, password, subject=None, bodytext=None, filelist=None):
