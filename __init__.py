@@ -1,9 +1,11 @@
+import os
 import sys
 sys.path.append('..')
 
 from configparser import ConfigParser
 config = ConfigParser()
-config.read('setting_messages.ini')
+codepath = os.path.dirname(os.path.abspath(__file__))
+config.read(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'setting_messages.ini'))
 
 # Telegram
 configtg = config['telegram']
